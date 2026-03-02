@@ -1,0 +1,6 @@
+djitellopy
+opencv-python
+numpy
+pygame
+icrawler
+ultralytics

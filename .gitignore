@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+.env
+
+# VS Code
+.vscode/
+
+# Training outputs
+output/
+runs/
+
+# Runtime artifacts
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.avi
+
+# OS files
+.DS_Store
+Thumbs.db
+
+img/
+
