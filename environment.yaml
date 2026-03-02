@@ -211,5 +211,3 @@ dependencies:
     - torchvision==0.25.0+cu128
     - typing_extensions==4.15.0
     - ultralytics-thop==2.0.18
-
-prefix: "C:\\00_Program\\00_Science\\01_Programming\\03_Environment\\miniforge3\\envs\\Tello"
