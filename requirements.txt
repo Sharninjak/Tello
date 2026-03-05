@@ -1,4 +1,6 @@
-djitellopy
+tellopy
+av
+PyQt5
 opencv-python
 numpy
 pygame

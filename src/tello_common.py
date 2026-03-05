@@ -1,14 +1,22 @@
-from djitellopy import Tello
-from djitellopy.tello import TelloException
+from __future__ import annotations
+
+import os
+from datetime import datetime
 
 
-def connect_tello_with_fallback(tello: Tello) -> str:
+def safe_int(value, default: int = -1) -> int:
     try:
-        tello.connect()
-        return "state"
-    except TelloException:
-        try:
-            tello.connect(wait_for_state=False)
-        except TypeError:
-            tello.connect(False)
-        return "command_only"
+        return int(value)
+    except Exception:
+        return default
+
+
+def ensure_photo_dir() -> str:
+    path = os.path.join("img", "uav")
+    os.makedirs(path, exist_ok=True)
+    return path
+
+
+def build_photo_path(prefix: str = "photo") -> str:
+    filename = f"{prefix}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.jpg"
+    return os.path.join(ensure_photo_dir(), filename)

@@ -195,7 +195,7 @@ dependencies:
     - av==16.1.0
     - beautifulsoup4==4.14.3
     - bs4==0.0.2
-    - djitellopy==2.5.0
+    - tellopy==0.7.0
     - filelock==3.24.3
     - fsspec==2026.2.0
     - icrawler==0.6.10
@@ -211,3 +211,4 @@ dependencies:
     - torchvision==0.25.0+cu128
     - typing_extensions==4.15.0
     - ultralytics-thop==2.0.18
+    - PyQt5==5.15.11
